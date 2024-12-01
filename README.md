@@ -1,4 +1,5 @@
 Szoftvertesztelés szorgalmi feladat
+
 Név: Lengyel Gábor
 
 Az importált függőségek frissítve lettek a mvnrepository segítségével.
