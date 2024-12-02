@@ -33,4 +33,12 @@ class FibonacciTest {
     void testFibonacci2() {
         testFibonacci(23, 28657);
     }
+
+    @Test
+    @DisplayName("Fibonacci unit test (negative n)")
+    void testFibonacciNegative() {
+        Fibonacci fibonacci = new Fibonacci();
+        
+        assertThrows(IllegalArgumentException.class, () -> fibonacci.getFibonacci(-1));
+    }
 }
