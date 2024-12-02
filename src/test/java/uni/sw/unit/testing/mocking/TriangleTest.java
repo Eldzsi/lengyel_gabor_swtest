@@ -1,6 +1,7 @@
 package uni.sw.unit.testing.mocking;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.mockito.Mockito.*;
 
 import org.junit.jupiter.api.BeforeAll;
@@ -28,19 +29,19 @@ class TriangleMockTest {
     @Test
     @DisplayName("Triangle isosceles default value test")
     void mockDefaultIsosceles() {
-        assertEquals(false, mockTriangle.isIsosceles());
+        assertFalse(mockTriangle.isIsosceles());
     }
 
     @Test
     @DisplayName("Triangle equilateral default value test")
     void mockDefaultEquilateral() {
-        assertEquals(false, mockTriangle.isEquilateral());
+        assertFalse(mockTriangle.isEquilateral());
     }
 
     @Test
     @DisplayName("Triangle right-angled default value test")
     void mockDefaultRightAngled() {
-        assertEquals(false, mockTriangle.isRightAngeled());
+        assertFalse(mockTriangle.isRightAngeled());
     }
 
     @Test
